@@ -1,8 +1,8 @@
 {
-  "name": "typo3-fluid",
-  "displayName": "Typo3-Fluid",
+  "name": "vscode-typo3-fluid",
+  "displayName": "Typo3 Fluid Syntax Highlighting",
   "description": "Syntax highlighting for TYPO3 Fluid",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "leon-wbr",
   "icon": "icons/typo3.png",
   "engines": {
