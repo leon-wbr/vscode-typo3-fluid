@@ -1,0 +1,38 @@
+{
+  "name": "typo3-fluid",
+  "displayName": "Typo3-Fluid",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "fluid",
+        "aliases": [
+          "Fluid",
+          "fluid"
+        ],
+        "extensions": [
+          ".html"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "fluid",
+        "scopeName": "source.fluid",
+        "path": "./syntaxes/fluid.tmLanguage.json"
+      }
+    ]
+  },
+  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72",
+  "devDependencies": {
+    "vscode-test": "^1.6.1"
+  }
+}
