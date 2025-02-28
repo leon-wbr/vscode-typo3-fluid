@@ -1,13 +1,27 @@
 {
   "name": "typo3-fluid",
   "displayName": "Typo3-Fluid",
-  "description": "",
-  "version": "0.0.1",
+  "description": "Syntax highlighting for TYPO3 Fluid",
+  "version": "0.1.0",
+  "publisher": "leon-wbr",
+  "icon": "icons/typo3.png",
   "engines": {
     "vscode": "^1.97.0"
   },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leon-wbr/vscode-typo3-fluid/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leon-wbr/vscode-typo3-fluid"
+  },
   "categories": [
     "Programming Languages"
+  ],
+  "keywords": [
+    "typo3",
+    "fluid"
   ],
   "contributes": {
     "languages": [
@@ -20,7 +34,11 @@
         "extensions": [
           ".html"
         ],
-        "configuration": "./language-configuration.json"
+        "configuration": "./language-configuration.json",
+        "icon": {
+          "light": "icons/typo3-transparent.png",
+          "dark": "icons/typo3-transparent.png"
+        }
       }
     ],
     "grammars": [
