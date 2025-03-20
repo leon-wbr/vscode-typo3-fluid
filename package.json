@@ -6,7 +6,7 @@
   "publisher": "leon-wbr",
   "icon": "icons/typo3.png",
   "engines": {
-    "vscode": "^1.97.0"
+    "vscode": "^1.89.0"
   },
   "license": "MIT",
   "bugs": {
