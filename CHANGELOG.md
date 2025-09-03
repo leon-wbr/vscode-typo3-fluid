@@ -4,6 +4,10 @@ All notable changes to the "typo3-fluid" extension will be documented in this fi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.2.0]
+
+- Added syntax highlighting for Fluid comments
+
 ## [0.1.2]
 
 - Fixed compatibility issue with Cursor AI by decreasing required VS Code version
