@@ -2,8 +2,11 @@
   "name": "vscode-typo3-fluid",
   "displayName": "Typo3 Fluid Syntax Highlighting",
   "description": "Syntax highlighting for TYPO3 Fluid",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "publisher": "leon-wbr",
+  "contributors": [
+    "rp-feflo"
+  ],
   "icon": "icons/typo3.png",
   "engines": {
     "vscode": "^1.89.0"

@@ -5,6 +5,29 @@
   "fileTypes": ["html"],
   "patterns": [
     {
+      "include": "#fluid-variables"
+    },
+    {
+      "include": "#html-tags-with-fluid"
+    },
+    {
+      "name": "comment.block.html",
+      "begin": "(<f:comment(?:\\s[^>]*)?>)",
+      "end": "(</f:comment>)",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.comment.html" }
+      },
+      "endCaptures": {
+        "1": { "name": "punctuation.definition.comment.html" }
+      },
+      "patterns": [
+        {
+          "match": "[^<]+|<[^/]|<(?=[^f])",
+          "name": "comment.block.html"
+        }
+      ]
+    },
+    {
       "include": "text.html.derivative"
     },
     {
@@ -12,11 +35,53 @@
     }
   ],
   "repository": {
-    "fluid-tags": {
+    "fluid-variables": {
+      "name": "variable.block.html",
+      "match": "\\{[^}]*\\}",
+      "captures": {
+        "0": { "name": "variable.block.html" }
+      }
+    },
+    "html-tags-with-fluid": {
+      "begin": "(<)([a-zA-Z0-9:-]+)",
+      "end": "(>)",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.tag.begin.html" },
+        "2": { "name": "entity.name.tag.html" }
+      },
+      "endCaptures": {
+        "1": { "name": "punctuation.definition.tag.end.html" }
+      },
       "patterns": [
         {
-          "name": "entity.name.tag.fluid",
-          "match": "<f:[a-zA-Z]+"
+          "include": "#fluid-variables"
+        },
+        {
+          "match": "\\s+([a-zA-Z0-9:-]+)(=)",
+          "captures": {
+            "1": { "name": "entity.other.attribute-name.html" },
+            "2": { "name": "punctuation.separator.key-value.html" }
+          }
+        },
+        {
+          "begin": "\"",
+          "end": "\"",
+          "name": "string.quoted.double.html",
+          "patterns": [
+            {
+              "include": "#fluid-variables"
+            }
+          ]
+        },
+        {
+          "begin": "'",
+          "end": "'",
+          "name": "string.quoted.single.html",
+          "patterns": [
+            {
+              "include": "#fluid-variables"
+            }
+          ]
         }
       ]
     }
