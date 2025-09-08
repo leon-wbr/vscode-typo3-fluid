@@ -5,12 +5,6 @@
   "fileTypes": ["html"],
   "patterns": [
     {
-      "include": "#fluid-variables"
-    },
-    {
-      "include": "#html-tags-with-fluid"
-    },
-    {
       "name": "comment.block.html",
       "begin": "(<f:comment(?:\\s[^>]*)?>)",
       "end": "(</f:comment>)",
@@ -26,6 +20,12 @@
           "name": "comment.block.html"
         }
       ]
+    },
+    {
+      "include": "#fluid-variables"
+    },
+    {
+      "include": "#html-tags-with-fluid"
     },
     {
       "include": "text.html.derivative"
@@ -45,6 +45,49 @@
     "html-tags-with-fluid": {
       "begin": "(<)([a-zA-Z0-9:-]+)",
       "end": "(>)",
+      "beginCaptures": {
+        "1": { "name": "punctuation.definition.tag.begin.html" },
+        "2": { "name": "entity.name.tag.html" }
+      },
+      "endCaptures": {
+        "1": { "name": "punctuation.definition.tag.end.html" }
+      },
+      "patterns": [
+        {
+          "include": "#fluid-variables"
+        },
+        {
+          "match": "\\s+([a-zA-Z0-9:-]+)(=)",
+          "captures": {
+            "1": { "name": "entity.other.attribute-name.html" },
+            "2": { "name": "punctuation.separator.key-value.html" }
+          }
+        },
+        {
+          "begin": "\"",
+          "end": "\"",
+          "name": "string.quoted.double.html",
+          "patterns": [
+            {
+              "include": "#fluid-variables"
+            }
+          ]
+        },
+        {
+          "begin": "'",
+          "end": "'",
+          "name": "string.quoted.single.html",
+          "patterns": [
+            {
+              "include": "#fluid-variables"
+            }
+          ]
+        }
+      ]
+    },
+    "fluid-tags": {
+      "begin": "(<f:)([a-zA-Z0-9:-]+)",
+      "end": "(/>|>)",
       "beginCaptures": {
         "1": { "name": "punctuation.definition.tag.begin.html" },
         "2": { "name": "entity.name.tag.html" }
