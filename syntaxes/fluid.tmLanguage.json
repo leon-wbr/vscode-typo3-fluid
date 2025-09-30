@@ -54,6 +54,9 @@
       },
       "patterns": [
         {
+          "include": "#fluid-tags"
+        },
+        {
           "include": "#fluid-variables"
         },
         {
