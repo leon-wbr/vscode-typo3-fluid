@@ -4,6 +4,11 @@ All notable changes to the "typo3-fluid" extension will be documented in this fi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.3.0]
+
+- Added support for variables without or inside tags
+- Added support for inline variables (depends on theme highlighting features)
+
 ## [0.2.0]
 
 - Added syntax highlighting for Fluid comments
