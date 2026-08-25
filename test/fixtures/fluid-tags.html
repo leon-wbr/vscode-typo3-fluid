@@ -1,0 +1,10 @@
+<div class="{wrapperClass}">
+  <f:if condition="{items}">
+    <f:for each="{items}" as="item">
+      <li>{item.name}</li>
+    </f:for>
+  </f:if>
+  <f:link.page pageUid="{page.uid}">{page.title}</f:link.page>
+  <f:image src="{file}" alt="" />
+  <f:comment>not highlighted as markup</f:comment>
+</div>
