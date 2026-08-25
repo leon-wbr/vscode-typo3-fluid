@@ -4,6 +4,10 @@ All notable changes to the "typo3-fluid" extension will be documented in this fi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.4.2]
+
+- Marked the extension as no longer actively developed — use [Fluid Template Language](https://marketplace.visualstudio.com/items?itemName=FriendsOfTYPO3.fluid-language) by Friends of TYPO3 instead
+
 ## [0.4.1]
 
 - Fixed CSS inside `<style>` losing all highlighting: `<style>` and `<script>` are no longer swallowed by the generic HTML tag rule, so their contents are highlighted as CSS and JavaScript again
