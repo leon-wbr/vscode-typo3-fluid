@@ -1,5 +1,8 @@
 # TYPO3 Fluid Syntax Highlighting
 
+> [!IMPORTANT]
+> **This extension is no longer actively developed. Please use [Fluid Template Language](https://marketplace.visualstudio.com/items?itemName=FriendsOfTYPO3.fluid-language) by [Friends of TYPO3](https://github.com/FriendsOfTYPO3/vscode-fluid-language) instead.**
+
 This extension provides basic syntax highlighting for [TYPO3 Fluid](https://typo3.org/fluid).
 
 Simply extends HTML with Fluid tags, such as `<f:if>`, `<f:for>`, etc. 

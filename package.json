@@ -1,7 +1,7 @@
 {
   "name": "vscode-typo3-fluid",
   "displayName": "Typo3 Fluid Syntax Highlighting",
-  "description": "Syntax highlighting for TYPO3 Fluid",
+  "description": "[DEPRECATED] Syntax highlighting for TYPO3 Fluid — use Fluid Template Language by Friends of TYPO3 instead",
   "version": "0.4.1",
   "publisher": "leon-wbr",
   "contributors": [
