@@ -4,6 +4,10 @@ All notable changes to the "typo3-fluid" extension will be documented in this fi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.4.0]
+
+- Added support for Fluid Tags inside of HTML STYLE tags like `<f:format.raw>{fluidVariable}</f:format>` to use Fluid variables for CSS properties
+
 ## [0.3.0]
 
 - Added support for variables without or inside tags
