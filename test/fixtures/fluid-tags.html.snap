@@ -1,0 +1,74 @@
+><div class="{wrapperClass}">
+#^ source.fluid punctuation.definition.tag.begin.html
+# ^^^ source.fluid entity.name.tag.html
+#    ^ source.fluid
+#     ^^^^^ source.fluid entity.other.attribute-name.html
+#          ^ source.fluid punctuation.separator.key-value.html
+#           ^ source.fluid string.quoted.double.html
+#            ^^^^^^^^^^^^^^ source.fluid string.quoted.double.html variable.block.html variable.block.html
+#                          ^ source.fluid string.quoted.double.html
+#                           ^ source.fluid punctuation.definition.tag.end.html
+>  <f:if condition="{items}">
+#^^ source.fluid
+#  ^ source.fluid punctuation.definition.tag.begin.html
+#   ^^ source.fluid entity.name.tag.fluid
+#     ^^ source.fluid entity.name.tag.fluid
+#       ^^^^^^^^^^^^^^^^^^^^ source.fluid entity.other.attribute-name.html
+#                           ^ source.fluid punctuation.definition.tag.end.html
+>    <f:for each="{items}" as="item">
+#^^^^ source.fluid
+#    ^ source.fluid punctuation.definition.tag.begin.html
+#     ^^ source.fluid entity.name.tag.fluid
+#       ^^^ source.fluid entity.name.tag.fluid
+#          ^^^^^^^^^^^^^^^^^^^^^^^^^ source.fluid entity.other.attribute-name.html
+#                                   ^ source.fluid punctuation.definition.tag.end.html
+>      <li>{item.name}</li>
+#^^^^^^ source.fluid
+#      ^ source.fluid punctuation.definition.tag.begin.html
+#       ^^ source.fluid entity.name.tag.html
+#         ^ source.fluid punctuation.definition.tag.end.html
+#          ^^^^^^^^^^^ source.fluid variable.block.html variable.block.html
+#                     ^^ source.fluid meta.tag.structure.li.end.html punctuation.definition.tag.begin.html
+#                       ^^ source.fluid meta.tag.structure.li.end.html entity.name.tag.html
+#                         ^ source.fluid meta.tag.structure.li.end.html punctuation.definition.tag.end.html
+>    </f:for>
+#^^^^ source.fluid
+#    ^^ source.fluid punctuation.definition.tag.begin.html
+#      ^^ source.fluid entity.name.tag.fluid
+#        ^^^ source.fluid entity.name.tag.fluid
+#           ^ source.fluid punctuation.definition.tag.end.html
+>  </f:if>
+#^^ source.fluid
+#  ^^ source.fluid punctuation.definition.tag.begin.html
+#    ^^ source.fluid entity.name.tag.fluid
+#      ^^ source.fluid entity.name.tag.fluid
+#        ^ source.fluid punctuation.definition.tag.end.html
+>  <f:link.page pageUid="{page.uid}">{page.title}</f:link.page>
+#^^ source.fluid
+#  ^ source.fluid punctuation.definition.tag.begin.html
+#   ^^ source.fluid entity.name.tag.fluid
+#     ^^^^^^^^^ source.fluid entity.name.tag.fluid
+#              ^^^^^^^^^^^^^^^^^^^^^ source.fluid entity.other.attribute-name.html
+#                                   ^ source.fluid punctuation.definition.tag.end.html
+#                                    ^^^^^^^^^^^^ source.fluid variable.block.html variable.block.html
+#                                                ^^ source.fluid punctuation.definition.tag.begin.html
+#                                                  ^^ source.fluid entity.name.tag.fluid
+#                                                    ^^^^^^^^^ source.fluid entity.name.tag.fluid
+#                                                             ^ source.fluid punctuation.definition.tag.end.html
+>  <f:image src="{file}" alt="" />
+#^^ source.fluid
+#  ^ source.fluid punctuation.definition.tag.begin.html
+#   ^^ source.fluid entity.name.tag.fluid
+#     ^^^^^ source.fluid entity.name.tag.fluid
+#          ^^^^^^^^^^^^^^^^^^^^^^ source.fluid entity.other.attribute-name.html
+#                                ^ source.fluid punctuation.definition.tag.end.html
+>  <f:comment>not highlighted as markup</f:comment>
+#^^ source.fluid
+#  ^^^^^^^^^^^ source.fluid comment.block.html punctuation.definition.comment.html
+#             ^^^^^^^^^^^^^^^^^^^^^^^^^ source.fluid comment.block.html comment.block.html
+#                                      ^^^^^^^^^^^^ source.fluid comment.block.html punctuation.definition.comment.html
+></div>
+#^^ source.fluid meta.tag.structure.div.end.html punctuation.definition.tag.begin.html
+#  ^^^ source.fluid meta.tag.structure.div.end.html entity.name.tag.html
+#     ^ source.fluid meta.tag.structure.div.end.html punctuation.definition.tag.end.html
+>

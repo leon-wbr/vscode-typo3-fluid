@@ -4,6 +4,13 @@ All notable changes to the "typo3-fluid" extension will be documented in this fi
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.4.1]
+
+- Fixed CSS inside `<style>` losing all highlighting: `<style>` and `<script>` are no longer swallowed by the generic HTML tag rule, so their contents are highlighted as CSS and JavaScript again
+- Fixed Fluid variables in CSS property values (`color: {brandColor};`) not being recognised, while leaving the surrounding CSS highlighted
+- Fixed closing Fluid tags splitting the tag name at the wrong offset (`</f:for>` was read as `f:f` + `or`)
+- Added snapshot tests covering Fluid in HTML, `<style>` and `<script>`
+
 ## [0.4.0]
 
 - Added support for Fluid Tags inside of HTML STYLE tags like `<f:format.raw>{fluidVariable}</f:format>` to use Fluid variables for CSS properties

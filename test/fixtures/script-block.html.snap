@@ -1,0 +1,14 @@
+><script>
+#^ source.fluid meta.embedded.block.html meta.tag.metadata.script.start.html punctuation.definition.tag.begin.html
+# ^^^^^^ source.fluid meta.embedded.block.html meta.tag.metadata.script.start.html entity.name.tag.html
+#       ^ source.fluid meta.embedded.block.html meta.tag.metadata.script.start.html punctuation.definition.tag.end.html
+>const config = { debug: true, level: 2 };
+#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ source.fluid meta.embedded.block.html source.js
+>const label = "static";
+#^^^^^^^^^^^^^^^^^^^^^^^^ source.fluid meta.embedded.block.html source.js
+></script>
+#^ source.fluid meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html source.js-ignored-vscode
+# ^ source.fluid meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.begin.html
+#  ^^^^^^ source.fluid meta.embedded.block.html meta.tag.metadata.script.end.html entity.name.tag.html
+#        ^ source.fluid meta.embedded.block.html meta.tag.metadata.script.end.html punctuation.definition.tag.end.html
+>
